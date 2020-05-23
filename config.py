@@ -25,6 +25,8 @@ class Config(object):
     # Configuration for posts
     POSTS_PER_PAGE = int(os.environ.get('POSTS_PER_PAGE')) #os.environ.get('POSTS_PER_PAGE')
 
-    
     # Languages supported for the app
     LANGUAGES =  os.environ.get('LANGUAGES')
+
+    # Elasticsearch
+    ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
